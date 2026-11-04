@@ -5,27 +5,27 @@
     "alsa.zip": {
       "bytes": 7332788,
       "sha256": "364bc0a25d916bc616bef174a890f70814fe0297c458bd85aad0367cad2bb223",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/alsa.zip"
+      "url": "https://github.com/user-attachments/files/34394296/alsa.zip"
     },
     "renfe.zip": {
       "bytes": 866677,
       "sha256": "3d7cca3b3b0e7ccf2d9da3ee7502cfc71c0d02f6411ae55cb9f21fdd7632c1b6",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/renfe.zip"
+      "url": "https://github.com/user-attachments/files/34394298/renfe.zip"
     },
     "rioja-interurbano.zip": {
       "bytes": 2774981,
       "sha256": "bfcc1231ade946eed4c25d27be9fbae76778bf911e4ed3c2b59074dd592e4239",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-interurbano.zip"
+      "url": "https://github.com/user-attachments/files/34394299/rioja-interurbano.zip"
     },
     "rioja-metropolitano.zip": {
       "bytes": 724333,
       "sha256": "5ee1d180d7ae88bcab82bd65d1725fd3f7cf54471c61440f284ce620ff27c712",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-metropolitano.zip"
+      "url": "https://github.com/user-attachments/files/34394301/rioja-metropolitano.zip"
     },
     "rioja-rural.zip": {
       "bytes": 403974,
       "sha256": "50fa4615cba2635a37bd96386a1048897afe36bcc7ee58f27b480ff5c8545944",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-rural.zip"
+      "url": "https://github.com/user-attachments/files/34394302/rioja-rural.zip"
     },
     "xunta.zip": {
       "bytes": 142533771,
@@ -36,73 +36,73 @@
           "datei": "xunta-basis.zip",
           "bytes": 1925811,
           "sha256": "36e261c652ef46d6982dba55e8dac2fb9627873973ea08ca80819762186acee7",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-basis.zip"
+          "url": "https://github.com/user-attachments/files/34394551/xunta-basis.zip"
         },
         {
           "datei": "xunta-shapes-01.zip",
           "bytes": 16045569,
           "sha256": "3f01df17c78116f055a4d114c30aa0a67d49df8f68e08926c22891ec4bfb3a9b",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-01.zip"
+          "url": "https://github.com/user-attachments/files/34394552/xunta-shapes-01.zip"
         },
         {
           "datei": "xunta-shapes-02.zip",
           "bytes": 15994676,
           "sha256": "e95c58c9cacec7705c55c80a403375110e9e27ee47ca5b10e826276a76b49cf9",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-02.zip"
+          "url": "https://github.com/user-attachments/files/34394553/xunta-shapes-02.zip"
         },
         {
           "datei": "xunta-shapes-03.zip",
           "bytes": 15897003,
           "sha256": "feceb174354dd1d051f91e0c158bfc87e216c8afba8ee630f18f179e479a9377",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-03.zip"
+          "url": "https://github.com/user-attachments/files/34394555/xunta-shapes-03.zip"
         },
         {
           "datei": "xunta-shapes-04.zip",
           "bytes": 15779337,
           "sha256": "be4bee832648a775ba639be2cf3519fd1260357824ecffcaa878195bd61d0ffb",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-04.zip"
+          "url": "https://github.com/user-attachments/files/34394558/xunta-shapes-04.zip"
         },
         {
           "datei": "xunta-shapes-05.zip",
           "bytes": 15939544,
           "sha256": "a28f3ea56515f52d2fca6aeb85b1220434cb4103c3f9a7466f6c94eae20c7ff7",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-05.zip"
+          "url": "https://github.com/user-attachments/files/34394562/xunta-shapes-05.zip"
         },
         {
           "datei": "xunta-shapes-06.zip",
           "bytes": 15884490,
           "sha256": "a1732c7850d5cf5efa48b75e124118172c18f57359934a84b10bc582ae0a6c77",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-06.zip"
+          "url": "https://github.com/user-attachments/files/34394564/xunta-shapes-06.zip"
         },
         {
           "datei": "xunta-shapes-07.zip",
           "bytes": 16014505,
           "sha256": "348f262a93a3b01ce07f09a5acc6168a8c0c1ad5df1a9447cf7373e5c31dd99c",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-07.zip"
+          "url": "https://github.com/user-attachments/files/34394567/xunta-shapes-07.zip"
         },
         {
           "datei": "xunta-shapes-08.zip",
           "bytes": 5515496,
           "sha256": "2535a827fca23367ef9dbddc3a652cc5223adb4022fb28047b24fe66393f6f9d",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-08.zip"
+          "url": "https://github.com/user-attachments/files/34394572/xunta-shapes-08.zip"
         },
         {
           "datei": "xunta-stop_times-01.zip",
           "bytes": 8642558,
           "sha256": "ceca9fc66207d3fd005f8fcaf8f317efecc6186b722753a5fd1627c0207d6245",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-01.zip"
+          "url": "https://github.com/user-attachments/files/34394575/xunta-stop_times-01.zip"
         },
         {
           "datei": "xunta-stop_times-02.zip",
           "bytes": 8741443,
           "sha256": "6d36e0d6ad119f1850d5cf32d91db23e61cc563d8eb3280efa16b7a3a0b28692",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-02.zip"
+          "url": "https://github.com/user-attachments/files/34394578/xunta-stop_times-02.zip"
         },
         {
           "datei": "xunta-stop_times-03.zip",
           "bytes": 6539865,
           "sha256": "046be69031c974837cdd4c09b6d02952635e7d7d2819ddcb7591b39e0c214f09",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-03.zip"
+          "url": "https://github.com/user-attachments/files/34394580/xunta-stop_times-03.zip"
         }
       ],
       "hinweis": "Jede Teildatei ist ein g\u00fcltiges ZIP. xunta-basis.zip entpacken; shapes.txt und stop_times.txt aus den nummerierten ZIPs der Reihe nach aneinanderh\u00e4ngen (Kopfzeile ab Teil 2 weglassen). Ergebnis ergibt die Originaldatei."

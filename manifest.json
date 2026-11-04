@@ -33,55 +33,79 @@
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip",
       "teile": [
         {
-          "datei": "xunta.zip.00.part",
-          "bytes": 19000000,
-          "sha256": "7c958467ae190aedecdb9534a90baee3409882c1796da238e760540a6c32cc4e",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.00.part"
+          "datei": "xunta-basis.zip",
+          "bytes": 1925811,
+          "sha256": "36e261c652ef46d6982dba55e8dac2fb9627873973ea08ca80819762186acee7",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-basis.zip"
         },
         {
-          "datei": "xunta.zip.01.part",
-          "bytes": 19000000,
-          "sha256": "f4ab76e5429a044589528af486b148a47bba89a944d76021c97e26eda75012bc",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.01.part"
+          "datei": "xunta-shapes-01.zip",
+          "bytes": 16045569,
+          "sha256": "3f01df17c78116f055a4d114c30aa0a67d49df8f68e08926c22891ec4bfb3a9b",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-01.zip"
         },
         {
-          "datei": "xunta.zip.02.part",
-          "bytes": 19000000,
-          "sha256": "6429cdf758256011132be5f4db3e01843715fda36a44fdec099addebc7d7d981",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.02.part"
+          "datei": "xunta-shapes-02.zip",
+          "bytes": 15994676,
+          "sha256": "e95c58c9cacec7705c55c80a403375110e9e27ee47ca5b10e826276a76b49cf9",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-02.zip"
         },
         {
-          "datei": "xunta.zip.03.part",
-          "bytes": 19000000,
-          "sha256": "4b87b4cdf9f756450917b4aeddffb45b5436b127d4eeda9ce0a4b1456a7d3489",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.03.part"
+          "datei": "xunta-shapes-03.zip",
+          "bytes": 15897003,
+          "sha256": "feceb174354dd1d051f91e0c158bfc87e216c8afba8ee630f18f179e479a9377",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-03.zip"
         },
         {
-          "datei": "xunta.zip.04.part",
-          "bytes": 19000000,
-          "sha256": "8d74a3b2d1901d44bcf41e5873805369238bb030ddf5992943d1797ebcc151f8",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.04.part"
+          "datei": "xunta-shapes-04.zip",
+          "bytes": 15779337,
+          "sha256": "be4bee832648a775ba639be2cf3519fd1260357824ecffcaa878195bd61d0ffb",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-04.zip"
         },
         {
-          "datei": "xunta.zip.05.part",
-          "bytes": 19000000,
-          "sha256": "f4c80b6c1e76fda7d9b38a76cb90d1145ed238f58134360195c73470f58645c1",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.05.part"
+          "datei": "xunta-shapes-05.zip",
+          "bytes": 15939544,
+          "sha256": "a28f3ea56515f52d2fca6aeb85b1220434cb4103c3f9a7466f6c94eae20c7ff7",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-05.zip"
         },
         {
-          "datei": "xunta.zip.06.part",
-          "bytes": 19000000,
-          "sha256": "3eb1fc348a8e8557c5956912e4e5fd714cd20c858ba253c4c1d750601f9f5b46",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.06.part"
+          "datei": "xunta-shapes-06.zip",
+          "bytes": 15884490,
+          "sha256": "a1732c7850d5cf5efa48b75e124118172c18f57359934a84b10bc582ae0a6c77",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-06.zip"
         },
         {
-          "datei": "xunta.zip.07.part",
-          "bytes": 9533771,
-          "sha256": "c4d98fa2eac24b9e05b0e643a6fbd29d2a72e3e8b3e7f2ade027bdb9cf235b29",
-          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.07.part"
+          "datei": "xunta-shapes-07.zip",
+          "bytes": 16014505,
+          "sha256": "348f262a93a3b01ce07f09a5acc6168a8c0c1ad5df1a9447cf7373e5c31dd99c",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-07.zip"
+        },
+        {
+          "datei": "xunta-shapes-08.zip",
+          "bytes": 5515496,
+          "sha256": "2535a827fca23367ef9dbddc3a652cc5223adb4022fb28047b24fe66393f6f9d",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-shapes-08.zip"
+        },
+        {
+          "datei": "xunta-stop_times-01.zip",
+          "bytes": 8642558,
+          "sha256": "ceca9fc66207d3fd005f8fcaf8f317efecc6186b722753a5fd1627c0207d6245",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-01.zip"
+        },
+        {
+          "datei": "xunta-stop_times-02.zip",
+          "bytes": 8741443,
+          "sha256": "6d36e0d6ad119f1850d5cf32d91db23e61cc563d8eb3280efa16b7a3a0b28692",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-02.zip"
+        },
+        {
+          "datei": "xunta-stop_times-03.zip",
+          "bytes": 6539865,
+          "sha256": "046be69031c974837cdd4c09b6d02952635e7d7d2819ddcb7591b39e0c214f09",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta-stop_times-03.zip"
         }
       ],
-      "hinweis": "Teile in Reihenfolge aneinanderh\u00e4ngen; Ergebnis gegen sha256 pr\u00fcfen"
+      "hinweis": "Jede Teildatei ist ein g\u00fcltiges ZIP. xunta-basis.zip entpacken; shapes.txt und stop_times.txt aus den nummerierten ZIPs der Reihe nach aneinanderh\u00e4ngen (Kopfzeile ab Teil 2 weglassen). Ergebnis ergibt die Originaldatei."
     }
   }
 }

@@ -1,0 +1,35 @@
+name: GTFS-Abruf
+
+on:
+  schedule:
+    - cron: '17 5 * * *'      # täglich früh morgens (UTC)
+    - cron: '17 21 * * 5'     # Freitagabend, wenn die Xunta neu veröffentlicht
+  workflow_dispatch:           # Knopf „Run workflow“
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gtfs-abruf
+  cancel-in-progress: false
+
+jobs:
+  abruf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Abrufen und veröffentlichen
+        env:
+          NAP_API_KEY: ${{ secrets.NAP_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/nap_sync.py
+      - name: Protokoll sichern
+        if: always()
+        run: |
+          git config user.name "gtfs-abruf"
+          git config user.email "gtfs-abruf@users.noreply.github.com"
+          git add manifest.json
+          git diff --cached --quiet || git commit -m "Stand und Protokoll"
+          git pull --rebase -q || true
+          git push -q

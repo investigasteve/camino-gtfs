@@ -30,7 +30,46 @@
     "xunta.zip": {
       "bytes": 142533771,
       "sha256": "c18bf63188c092112f5d9b2a22e26dc403c89c797aba7349b1c3d84a13a622a2",
-      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip"
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip",
+      "teile": [
+        {
+          "datei": "xunta.zip.00.part",
+          "bytes": 24000000,
+          "sha256": "cbae805398548b6e7111344bf5b8b644673c584518cab5ed3de18718c5149bae",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.00.part"
+        },
+        {
+          "datei": "xunta.zip.01.part",
+          "bytes": 24000000,
+          "sha256": "fa89e0ac5681d6e61f45a305421ffea8956bc75e20159df9b3b15a45f1e4941b",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.01.part"
+        },
+        {
+          "datei": "xunta.zip.02.part",
+          "bytes": 24000000,
+          "sha256": "5b061da1c3ae82cbc15a988fb3009ace4d1613e1a50da2c7c719205b219d5e3a",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.02.part"
+        },
+        {
+          "datei": "xunta.zip.03.part",
+          "bytes": 24000000,
+          "sha256": "feecb926c9d45b1a4c233b01e29b4935eae9f187b5860f6c92c3bb27554f35ab",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.03.part"
+        },
+        {
+          "datei": "xunta.zip.04.part",
+          "bytes": 24000000,
+          "sha256": "50ed489512e2d3dce4190ede3b091521b2b3a7653d034dbd7ee70a86910e7572",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.04.part"
+        },
+        {
+          "datei": "xunta.zip.05.part",
+          "bytes": 22533771,
+          "sha256": "3ab7ae7b87911a3c1617c57f12ecb59818ee176e95ad3a20f3790ed90f5a76b8",
+          "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip.05.part"
+        }
+      ],
+      "hinweis": "Teile in Reihenfolge aneinanderh\u00e4ngen; Ergebnis gegen sha256 pr\u00fcfen"
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "stand": "2026-11-04",
+  "quelle": "App-Bestand (IONOS db/gtfs)",
+  "dateien": {
+    "alsa.zip": {
+      "bytes": 7332788,
+      "sha256": "364bc0a25d916bc616bef174a890f70814fe0297c458bd85aad0367cad2bb223",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/alsa.zip"
+    },
+    "renfe.zip": {
+      "bytes": 866677,
+      "sha256": "3d7cca3b3b0e7ccf2d9da3ee7502cfc71c0d02f6411ae55cb9f21fdd7632c1b6",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/renfe.zip"
+    },
+    "rioja-interurbano.zip": {
+      "bytes": 2774981,
+      "sha256": "bfcc1231ade946eed4c25d27be9fbae76778bf911e4ed3c2b59074dd592e4239",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-interurbano.zip"
+    },
+    "rioja-metropolitano.zip": {
+      "bytes": 724333,
+      "sha256": "5ee1d180d7ae88bcab82bd65d1725fd3f7cf54471c61440f284ce620ff27c712",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-metropolitano.zip"
+    },
+    "rioja-rural.zip": {
+      "bytes": 403974,
+      "sha256": "50fa4615cba2635a37bd96386a1048897afe36bcc7ee58f27b480ff5c8545944",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-rural.zip"
+    },
+    "xunta.zip": {
+      "bytes": 142533771,
+      "sha256": "c18bf63188c092112f5d9b2a22e26dc403c89c797aba7349b1c3d84a13a622a2",
+      "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip"
+    }
+  }
+}

@@ -24,12 +24,22 @@ jobs:
           NAP_API_KEY: ${{ secrets.NAP_API_KEY }}
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/nap_sync.py
+      - name: Fahrplan-Excel aktualisieren
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get install -y -q php-cli php-zip >/dev/null
+          mkdir -p /tmp/x
+          gh release download latest -p xunta.zip -D /tmp/x --clobber
+          python3 scripts/build_fahrten.py /tmp/x/xunta.zip fahrplan/zusatz-strecken.json
+          if ! git diff --quiet fahrplan/zusatz-strecken.json || [ ! -f fahrplan/Busfahrplan-aktuell.xlsx ]; then php fahrplan/fahrplan_aktualisieren.php; fi
       - name: Protokoll sichern
         if: always()
         run: |
           git config user.name "gtfs-abruf"
           git config user.email "gtfs-abruf@users.noreply.github.com"
-          git add manifest.json
+          git add manifest.json fahrplan
           git diff --cached --quiet || git commit -m "Stand und Protokoll"
           git pull --rebase -q || true
           git push -q

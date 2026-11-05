@@ -91,14 +91,14 @@ function busArt(string $abfahrt): string {
     [$h] = array_map('intval', explode(':', $abfahrt));
     return $h >= 23 || $h < 6 ? 'Bus nocturno' : ($h >= 21 ? 'Bus tardío' : 'Bus diurno');
 }
-function blattTussa(array $t, string $kopf): string {
+function blattTussa(array $t, string $kopf, int $nr): string {
     $rows = ''; $merge = []; $r = 0;
     $mk = function (int $nr, string $cells, ?float $ht = null) { return '<row r="' . $nr . '"' . ($ht ? ' ht="' . $ht . '" customHeight="1"' : '') . '>' . $cells . '</row>'; };
     $blocks = [
         ['SANTIAGO - AEROPUERTO (TUSSA 6A) 1,00€', 'hs', ['Hórreo (Est. Intermodal) Salida', 'San Lázaro (solo subida)', 'San Marcos (solo subida)', 'Aeropuerto Llegada aprox.', 'Servicio', 'Tipo de bus']],
         ['AEROPUERTO - SANTIAGO (TUSSA 6A) 1,00€', 'sh', ['Aeropuerto Salida', 'San Marcos (solo bajada)', 'San Lázaro (solo bajada)', 'Hórreo (Est. Intermodal) Llegada aprox.', 'Servicio', 'Tipo de bus']],
     ];
-    foreach ($blocks as [$titel, $key, $head]) {
+    foreach ([$blocks[$nr]] as [$titel, $key, $head]) {
         $r++; $c = cs("A$r", 61, $titel); foreach (['B', 'C', 'D', 'E', 'F'] as $L) $c .= '<c r="' . $L . $r . '" s="61"/>'; $rows .= $mk($r, $c, 27); $merge[] = "A$r:F$r";
         $r++; $c = ''; foreach (['A', 'B', 'C', 'D', 'E', 'F'] as $i => $L) $c .= cs("$L$r", [16, 17, 51, 52, 53, 54][$i], $head[$i]); $rows .= $mk($r, $c, 42);
         $list = $t[$key]; $n = count($list);
@@ -111,19 +111,19 @@ function blattTussa(array $t, string $kopf): string {
                . ($d ? cn("B$r", $stl[1], null) . cn("C$r", $stl[0], null) : cn("B$r", $stl[1], frac($z[3])) . cn("C$r", $stl[0], frac($z[4])))
                . cn("D$r", $stl[1], frac($z[2]))
                . cs("E$r", $stl[0], $d ? 'Directo' : 'con paradas') . cs("F$r", $stl[1], busArt($z[1]));
-            $rows .= $mk($r, $c, 20.25);
+            $rows .= $mk($r, $c, 13.5);
         }
         $r++; $rows .= $mk($r, '<c r="A' . $r . '" s="62"/>', 6.75);
     }
     $r++;
-    foreach (['*Todos los días · Horas de llegada aproximadas*', '*Bus diurno hasta las 20:59 · bus tardío de 21:00 a 22:59 · bus nocturno desde las 23:00 (hora de salida)*', $t['stand'] ?? '', 'Fuente: Tussa – Transporte urbano de Santiago de Compostela, línea 6A'] as $x) {
+    foreach (['*Todos los días · Horas de llegada aproximadas*', '*Bus diurno hasta las 20:59 · bus tardío de 21:00 a 22:59*', '*Bus nocturno desde las 23:00 (según hora de salida)*', $t['stand'] ?? '', 'Fuente: Tussa – Transporte urbano de Santiago de Compostela, línea 6A'] as $x) {
         if ($x === '') continue;
         $c = cs("A$r", 60, $x); foreach (['B', 'C', 'D', 'E', 'F'] as $L) $c .= '<c r="' . $L . $r . '" s="60"/>';
         $rows .= $mk($r, $c, 15); $merge[] = "A$r:F$r"; $r++;
     }
     $mc = '<mergeCells count="' . count($merge) . '">' . implode('', array_map(fn($m) => '<mergeCell ref="' . $m . '"/>', $merge)) . '</mergeCells>';
     return $kopf . '<sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><dimension ref="A1:F' . ($r - 1) . '"/><sheetViews><sheetView workbookViewId="0"/></sheetViews><sheetFormatPr baseColWidth="10" defaultRowHeight="14.25"/><cols><col min="1" max="6" width="15.85546875" style="29" customWidth="1"/><col min="7" max="16384" width="11.42578125" style="29"/></cols><sheetData>' . $rows . '</sheetData>' . $mc
-        . '<printOptions horizontalCentered="1"/><pageMargins left="0.3149" right="0.3149" top="0.3543" bottom="0.3543" header="0.3149" footer="0.3149"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+        . '<printOptions horizontalCentered="1"/><pageMargins left="0.3149" right="0.3149" top="0.3543" bottom="0.3543" header="0.3149" footer="0.3149"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="1"/></worksheet>';
 }
 
 $kopf = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">';
@@ -150,11 +150,13 @@ foreach ($blaetter as $name => $bl) {
 $tj = json_decode((string)@file_get_contents($dir . DIRECTORY_SEPARATOR . 'tussa-6a.json'), true);
 if ($tj) {
     $tj['stand'] = 'Vigente desde el 28.05.2026';
-    $rid++;
-    $zo->addFromString("xl/worksheets/sheet$rid.xml", blattTussa($tj, $kopf));
-    $sheets .= '<sheet name="Santiago-Aeropuerto" sheetId="' . $rid . '" r:id="rId' . $rid . '"/>';
-    $rels .= '<Relationship Id="rId' . $rid . '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet' . $rid . '.xml"/>';
-    $ct .= '<Override PartName="/xl/worksheets/sheet' . $rid . '.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>';
+    foreach ([0 => 'Santiago-Aeropuerto', 1 => 'Aeropuerto-Santiago'] as $nr => $sname) {
+        $rid++;
+        $zo->addFromString("xl/worksheets/sheet$rid.xml", blattTussa($tj, $kopf, $nr));
+        $sheets .= '<sheet name="' . $sname . '" sheetId="' . $rid . '" r:id="rId' . $rid . '"/>';
+        $rels .= '<Relationship Id="rId' . $rid . '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet' . $rid . '.xml"/>';
+        $ct .= '<Override PartName="/xl/worksheets/sheet' . $rid . '.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>';
+    }
 }
 $wb = (string)$zin->getFromName('xl/workbook.xml');
 $wb = preg_replace('~<sheets>.*?</sheets>~s', '<sheets>' . $sheets . '</sheets>', $wb);

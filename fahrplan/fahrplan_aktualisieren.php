@@ -23,9 +23,7 @@ $pj = $dir . DIRECTORY_SEPARATOR . 'preise.json';
 if (is_file($pj)) { $x = json_decode((string)file_get_contents($pj), true); if (is_array($x)) $preise = $x + $preise; }
 $blaetter = [
     'Fisterra' => ['FS', 'SF', 'FC', 'CF'],
-    'Muxia' => ['MF', 'FM'],
-    'Muxia-Santiago' => ['MS', 'SM'],
-    'Muxia-A Coruña' => ['MC', 'CM'],
+    'Muxia' => ['MF', 'FM', 'MS', 'SM', 'MC', 'CM'],
 ];
 
 function esc(string $s): string { return htmlspecialchars($s, ENT_XML1 | ENT_QUOTES, 'UTF-8'); }

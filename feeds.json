@@ -1,12 +1,68 @@
 [
-  {"zip": "xunta.zip",              "ds": 1386, "min": 6,  "aktiv": true},
-  {"zip": "alsa.zip",               "ds": 932,  "min": 30, "aktiv": true},
-  {"zip": "renfe.zip",              "ds": 897,  "min": 7,  "aktiv": true},
-  {"zip": "rioja-interurbano.zip",  "ds": 1553, "min": 7,  "aktiv": true},
-  {"zip": "rioja-metropolitano.zip","ds": 1554, "min": 7,  "aktiv": true},
-  {"zip": "rioja-rural.zip",        "ds": 1556, "min": 7,  "aktiv": true},
-  {"zip": "acoruna-urbano.zip",     "ds": 1376, "min": 30, "aktiv": false},
-  {"zip": "navarra-interurbano.zip","ds": 963,  "min": 7,  "aktiv": false},
-  {"zip": "alavabus.zip",           "ds": 1161, "min": 7,  "aktiv": false},
-  {"zip": "burgos-stadtbus.zip",    "ds": 1626, "min": 30, "aktiv": false}
+  {
+    "zip": "xunta.zip",
+    "ds": 1386,
+    "min": 6,
+    "aktiv": true
+  },
+  {
+    "zip": "alsa.zip",
+    "ds": 932,
+    "min": 30,
+    "aktiv": true
+  },
+  {
+    "zip": "renfe.zip",
+    "ds": 897,
+    "min": 7,
+    "aktiv": true
+  },
+  {
+    "zip": "rioja-interurbano.zip",
+    "ds": 1553,
+    "min": 7,
+    "aktiv": true
+  },
+  {
+    "zip": "rioja-metropolitano.zip",
+    "ds": 1554,
+    "min": 7,
+    "aktiv": true
+  },
+  {
+    "zip": "rioja-rural.zip",
+    "ds": 1556,
+    "min": 7,
+    "aktiv": true
+  },
+  {
+    "zip": "acoruna-urbano.zip",
+    "ds": 1376,
+    "min": 30,
+    "aktiv": false
+  },
+  {
+    "zip": "navarra-interurbano.zip",
+    "ds": 963,
+    "min": 7,
+    "aktiv": false
+  },
+  {
+    "zip": "alavabus.zip",
+    "ds": 1161,
+    "min": 7,
+    "aktiv": false
+  },
+  {
+    "zip": "burgos-stadtbus.zip",
+    "ds": 1626,
+    "min": 30,
+    "aktiv": false
+  },
+  {
+    "zip": "aecfa-fluege.zip",
+    "ds": 920,
+    "min": 30,
+    "aktiv": true
+  }
 ]

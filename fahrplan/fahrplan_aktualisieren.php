@@ -46,7 +46,8 @@ function spalten(array $jf, string $code): array {
 
 $dt = fn($d) => $d ? date('d.m.Y', strtotime($d)) : '-';
 $standText = 'Actualizado: ' . $dt($jf['stand'] ?? '') . '  ·  válido hasta: ' . $dt($jf['gueltig_bis'] ?? '')
-    . "\n" . 'Fuente: NAP – Ministerio de Transportes, Xunta de Galicia';
+    . "\n" . 'Fuente: NAP – Ministerio de Transportes, Xunta de Galicia'
+    . "\n" . '(A) = Arriva - (M) = Monbus';
 
 function blattXml(array $jf, array $codes, array $namen, array $preise, string $standText, string $kopf): string {
     $rows = ''; $merge = []; $r = 0;
@@ -68,7 +69,7 @@ function blattXml(array $jf, array $codes, array $namen, array $preise, string $
             foreach ([0, 1, 2] as $i) {
                 $L1 = ['A', 'C', 'E'][$i]; $L2 = ['B', 'D', 'F'][$i];
                 $z = $col[$i][$k] ?? null;
-                $c .= ($z ? cs("$L1$r", $stl[0], ltrim($z[0], '0') . ' (' . $z[2] . ')') : cn("$L1$r", $stl[0], null)) . cn("$L2$r", $stl[1], $z ? frac($z[1]) : null);
+                $c .= ($z ? cs("$L1$r", $stl[0], ltrim($z[0], '0') . ' (' . $z[2][0] . ')') : cn("$L1$r", $stl[0], null)) . cn("$L2$r", $stl[1], $z ? frac($z[1]) : null);
             }
             $rows .= $mkRow($r, $c, 20.25);
         }

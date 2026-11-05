@@ -33,7 +33,11 @@ jobs:
           mkdir -p /tmp/x
           gh release download latest -p xunta.zip -D /tmp/x --clobber
           python3 scripts/build_fahrten.py /tmp/x/xunta.zip fahrplan/zusatz-strecken.json
-          if ! git diff --quiet fahrplan/zusatz-strecken.json || [ ! -f fahrplan/Busfahrplan-aktuell.xlsx ]; then php fahrplan/fahrplan_aktualisieren.php; fi
+          if ! git diff --quiet fahrplan/zusatz-strecken.json || [ ! -f fahrplan/Busfahrplan-aktuell.xlsx ]; then
+            php fahrplan/fahrplan_aktualisieren.php
+            pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+            python3 scripts/build_folleto.py --pdf
+          fi
       - name: Protokoll sichern
         if: always()
         run: |

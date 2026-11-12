@@ -1,32 +1,32 @@
 {
-  "stand": "2026-11-11 12:44 UTC",
+  "stand": "2026-11-12 13:47 UTC",
   "quelle": "App-Bestand (IONOS db/gtfs)",
   "dateien": {
     "alsa.zip": {
       "bytes": 7294342,
       "sha256": "03926356c9205122063687ccdb432473c7ea95e25e362557f992ab3684d18725",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/alsa.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2028-01-01",
       "von": "2025-01-01",
       "stand_geladen": "2026-11-04T02:23:49.643917Z",
       "geladen_am": 1793828673
     },
     "renfe.zip": {
-      "bytes": 756620,
-      "sha256": "8f766537e63071a19d97d10429c64997ca844d3c7fce2abb7ce4f40c57b4421f",
+      "bytes": 708119,
+      "sha256": "92923468545669f1e95f8d1fd4226a6b776e1b8fd122ec8efaace2a8b6835160",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/renfe.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2027-09-29",
-      "von": "2026-11-10",
-      "stand_geladen": "2026-11-04T02:20:04.406468Z",
-      "geladen_am": 1793828676
+      "von": "2026-11-11",
+      "stand_geladen": "2026-11-12T02:20:04.074761Z",
+      "geladen_am": 1794491247
     },
     "rioja-interurbano.zip": {
       "bytes": 2503138,
       "sha256": "5a95a4c877becb9f423a712448b6afc960eefea8b8813238c198ed95b3941890",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-interurbano.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2027-12-31",
       "von": "2026-01-01",
       "stand_geladen": "2026-10-29T20:20:04.331624Z",
@@ -36,7 +36,7 @@
       "bytes": 721157,
       "sha256": "9ca87f1b0924a22f5c77689ff2f295567780a792f1616b36e22317ddee018964",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-metropolitano.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2027-12-31",
       "von": "2026-01-01",
       "stand_geladen": "2026-10-29T20:20:08.431624Z",
@@ -46,7 +46,7 @@
       "bytes": 403974,
       "sha256": "50fa4615cba2635a37bd96386a1048897afe36bcc7ee58f27b480ff5c8545944",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-rural.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2027-12-31",
       "von": "1970-01-01",
       "stand_geladen": "2026-10-21T11:27:06.461051Z",
@@ -56,14 +56,14 @@
       "bytes": 149010594,
       "sha256": "0ecafc4db182bdf6c7d4737769dce2c5d4c2dd1dc30c7873eac860abaa9e5bff",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip",
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2026-12-01",
       "von": "2026-11-06",
       "stand_geladen": "2026-11-06T22:22:27.535917Z",
       "geladen_am": 1794401093
     },
     "aecfa-fluege.zip": {
-      "geprueft": "2026-11-11 12:44 UTC",
+      "geprueft": "2026-11-12 13:47 UTC",
       "bis": "2027-01-03",
       "von": "2026-11-08",
       "bytes": 3166655,
@@ -74,6 +74,7 @@
     }
   },
   "protokoll": [
+    "2026-11-12 13:47 UTC  renfe.zip: neuer Stand 2026-11-12, gültig bis 2027-09-29, 0.7 MB veröffentlicht.",
     "2026-11-11 12:44 UTC  xunta.zip: neuer Stand 2026-11-06, gültig bis 2026-12-01, 142.1 MB veröffentlicht.",
     "2026-11-10 13:29 UTC  Geprüft: alle Dateien sind aktuell.",
     "2026-11-09 13:56 UTC  Geprüft: alle Dateien sind aktuell.",

@@ -1,12 +1,12 @@
 {
-  "stand": "2026-11-22 13:23 UTC",
+  "stand": "2026-11-23 16:00 UTC",
   "quelle": "App-Bestand (IONOS db/gtfs)",
   "dateien": {
     "alsa.zip": {
       "bytes": 7294342,
       "sha256": "03926356c9205122063687ccdb432473c7ea95e25e362557f992ab3684d18725",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/alsa.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2028-01-01",
       "von": "2025-01-01",
       "stand_geladen": "2026-11-04T02:23:49.643917Z",
@@ -16,54 +16,54 @@
       "bytes": 694637,
       "sha256": "33d90cf774c43000db252619cb99a7374835c1766b4de4bb59f8cec338351d8a",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/renfe.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2027-12-11",
-      "von": "2026-11-21",
+      "von": "2026-11-22",
       "stand_geladen": "2026-11-19T02:20:04.149814Z",
       "geladen_am": 1795098444
     },
     "rioja-interurbano.zip": {
-      "bytes": 2503138,
-      "sha256": "5a95a4c877becb9f423a712448b6afc960eefea8b8813238c198ed95b3941890",
+      "bytes": 2239972,
+      "sha256": "5f671115736f5d9357b776f1f3645a0b8fc9be05f55f197c20f9f95771f0fa0a",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-interurbano.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2027-12-31",
       "von": "2026-01-01",
-      "stand_geladen": "2026-10-29T20:20:04.331624Z",
-      "geladen_am": 1793828678
+      "stand_geladen": "2026-11-23T12:22:17.487046Z",
+      "geladen_am": 1795449650
     },
     "rioja-metropolitano.zip": {
       "bytes": 721157,
       "sha256": "9ca87f1b0924a22f5c77689ff2f295567780a792f1616b36e22317ddee018964",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-metropolitano.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2027-12-31",
       "von": "2026-01-01",
       "stand_geladen": "2026-10-29T20:20:08.431624Z",
       "geladen_am": 1793828681
     },
     "rioja-rural.zip": {
-      "bytes": 403974,
-      "sha256": "50fa4615cba2635a37bd96386a1048897afe36bcc7ee58f27b480ff5c8545944",
+      "bytes": 331418,
+      "sha256": "d9f0ddfe56b144fa15f9a677f19e33f7a42bac7145a3dab03a2c8980d8498532",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/rioja-rural.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2027-12-31",
       "von": "1970-01-01",
-      "stand_geladen": "2026-10-21T11:27:06.461051Z",
-      "geladen_am": 1793828684
+      "stand_geladen": "2026-11-23T12:22:20.853156Z",
+      "geladen_am": 1795449654
     },
     "xunta.zip": {
-      "bytes": 150856906,
-      "sha256": "f1e1dc63b203415558d9963535fe117a3ea7e770ebd87ffb9967d7c8d5c97d61",
+      "bytes": 149787421,
+      "sha256": "fa84785f7840e6df6c9e2ec4db3c2454e87199b016af0be07f5bbb226b1c841e",
       "url": "https://github.com/investigasteve/camino-gtfs/releases/download/latest/xunta.zip",
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2026-12-15",
       "von": "2026-11-20",
-      "stand_geladen": "2026-11-13T18:22:37.281383Z",
-      "geladen_am": 1794925667
+      "stand_geladen": "2026-11-21T18:22:25.60582Z",
+      "geladen_am": 1795449644
     },
     "aecfa-fluege.zip": {
-      "geprueft": "2026-11-22 13:23 UTC",
+      "geprueft": "2026-11-23 16:00 UTC",
       "bis": "2027-01-14",
       "von": "2026-11-19",
       "bytes": 3166655,
@@ -74,6 +74,9 @@
     }
   },
   "protokoll": [
+    "2026-11-23 16:00 UTC  rioja-rural.zip: neuer Stand 2026-11-23, gültig bis 2027-12-31, 0.3 MB veröffentlicht.",
+    "2026-11-23 16:00 UTC  rioja-interurbano.zip: neuer Stand 2026-11-23, gültig bis 2027-12-31, 2.1 MB veröffentlicht.",
+    "2026-11-23 16:00 UTC  xunta.zip: neuer Stand 2026-11-21, gültig bis 2026-12-15, 142.8 MB veröffentlicht.",
     "2026-11-22 13:23 UTC  Geprüft: alle Dateien sind aktuell.",
     "2026-11-21 13:29 UTC  Geprüft: alle Dateien sind aktuell.",
     "2026-11-21 02:13 UTC  Geprüft: alle Dateien sind aktuell.",
@@ -100,8 +103,6 @@
     "2026-11-04 21:44 UTC  rioja-rural.zip: neuer Stand 2026-10-21, gültig bis 2027-12-31, 0.4 MB veröffentlicht.",
     "2026-11-04 21:44 UTC  rioja-metropolitano.zip: neuer Stand 2026-10-29, gültig bis 2027-12-31, 0.7 MB veröffentlicht.",
     "2026-11-04 21:44 UTC  rioja-interurbano.zip: neuer Stand 2026-10-29, gültig bis 2027-12-31, 2.4 MB veröffentlicht.",
-    "2026-11-04 21:44 UTC  renfe.zip: neuer Stand 2026-11-04, gültig bis 2027-09-29, 0.7 MB veröffentlicht.",
-    "2026-11-04 21:44 UTC  alsa.zip: neuer Stand 2026-11-04, gültig bis 2028-01-01, 7.0 MB veröffentlicht.",
-    "2026-11-04 21:44 UTC  xunta.zip: neuer Stand 2026-11-04, gültig bis 2026-11-28, 141.9 MB veröffentlicht."
+    "2026-11-04 21:44 UTC  renfe.zip: neuer Stand 2026-11-04, gültig bis 2027-09-29, 0.7 MB veröffentlicht."
   ]
 }
